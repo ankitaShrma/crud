@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+  <div><h1>Edit Your profiles<br><br>
+  </h1></div>
+  <form method = "post" action = "/delProfile/edit/<%=profiles._id %>">
+
+  <div class = "form-group-row">
+   <input class="form-control" type="hidden" name = "_id" value="<%= profiles.id %>" id="example-id">
+   </div>
+
+    
+   <div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label">Name</label>
+  <div class="col-10">
+    <input class="form-control" type="text" name = "name" value="<%= profiles.name %> " id=example-text-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label">College</label>
+  <div class="col-10">
+    <input class="form-control" type="text" name = "college" value="KU" id="example-text-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-email-input" class="col-2 col-form-label">Facebook</label>
+  <div class="col-10">
+    <input class="form-control" type="url" value="https://www.facebook.com" name = "fb" id="example-email-input">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="example-tel-input" class="col-2 col-form-label">Contact no</label>
+  <div class="col-10">
+    <input class="form-control" type="tel" value="9813894013" name = "contact" id="example-tel-input">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="example-number-input" class="col-2 col-form-label">Semester</label>
+  <div class="col-10">
+    <input class="form-control" type="number" value="6" name = "semester" id="example-number-input">
+  </div>
+</div>
+<div class="form-group row">
+    <label for="exampleInputFile">Change Your Photo </label>
+    <p><img src = "https://scontent.fktm3-1.fna.fbcdn.net/v/t1.0-1/p160x160/17264795_1324101181011237_2589908583664568788_n.jpg?oh=0cdf60701b4d277fb3f21ca147f8aa5a&oe=59CB7FBE"></p>
+    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+    
+  </div>
+
+<button class="btn btn-primary">Update</button>
+<a class="btn btn-danger" href="/editProfile/delete/<%=profiles._id %>">Delete</a>
+</form>
+
+</div>
+  </body>
+</html>

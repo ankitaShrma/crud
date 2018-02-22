@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+  <h2>Add Profile</h2>
+  <form method = "post" action = "addProfile/insert">
+  
+    
+   <div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label">Name</label>
+  <div class="col-10">
+    <input class="form-control" type="text" placeholder="Ankita Sharma" name="name" id="name">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label">College</label>
+  <div class="col-10">
+    <input class="form-control" type="text" placeholder="KU" name="college" id="college">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-email-input" class="col-2 col-form-label">Facebook</label>
+  <div class="col-10">
+    <input class="form-control" type="url" placeholder="https://www.facebook.com" id=fb" name="fb">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="example-tel-input" class="col-2 col-form-label">Contact no</label>
+  <div class="col-10">
+    <input class="form-control" type="tel" placeholder="color" id="colour" name="colour">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="example-number-input" class="col-2 col-form-label">Semester</label>
+  <div class="col-10">
+    <input class="form-control" type="text" placeholder="6" id="semester" name="semester">
+  </div>
+</div>
+<div class="form-group row">
+    <label for="exampleInputFile">Select Your Photo</label>
+    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+    
+  </div>
+
+<button class="btn btn-primary">Submit</button>
+
+</div>
+  </form>
+  </body>
+</html>

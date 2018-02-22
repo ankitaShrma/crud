@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1></h1>
+    <p>Welcome to my world
+  <!--  <h2><%= title %></h2>-->
+
+   <!-- <th>S.N.</th>
+    <th>Name</th>
+    <th>College</th>
+    <th>Action</th>-->
+    <a href="profile">profile</a>
+    <a href="add">Add</a>
+
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>S.N.</th>
+      <th>Name</th>
+      <th>College</th>
+      <th>Semester</th>
+      <th>Course</th>
+      <th>Contact</th>
+      <th>Facebook</th>
+    </tr>
+  </thead>
+  <tbody>
+
+<% profiles.forEach(function(profile, i){%>
+	<tr>
+	<td><%= i+1 %></td>
+    <td><%= profile.name %></td>
+	<td><%= profile.college %></td>
+	<td><%= profile.semester %></td>
+	<td><%= profile.contact %></td>
+    <td><%= profile.fb %></td>
+
+	<td><a class="btn btn-primary" href="profile" >View</button></td>
+	<td><a class="btn btn-warning" href="/edit/<%=profile._id %>">Edit</a></td>
+
+	<% }) %>
+
+
+  
+  </tbody>
+</table>
+
+
+
+    </p>
+  </body>
+</html>

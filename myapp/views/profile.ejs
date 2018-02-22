@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <style type="text/css">
+    body {
+   background-image: url('<%= profiles.colour %>');
+}
+  </style>
+  <body>
+    
+    <p>Welcome to my world
+
+   
+  
+<table class="table table-striped">
+
+ 
+
+   <tr>
+   
+      <th> Name</th> 
+      <% profiles.forEach(function(profile){ %> 
+      <td><%= profile.name %></td>
+      <%})%>
+    </tr>
+    
+   
+    <tr>
+      <th> College</th> 
+       <% profiles.forEach(function(profile){ %>
+      <td><%= profile.colour %></td>
+      <%})%>
+    </tr>
+   
+  <tr>
+      <th>Course</th> 
+      <% profiles.forEach(function(profile){ %>
+      <td> <%= profile.course %></td>
+      <%}) %>
+    </tr>
+
+     <tr>
+      <th>Semester</th> 
+      <% profiles.forEach(function(profile){ %>
+      <td> <%= profile.semester %></td>
+      <%}) %>
+    </tr>
+  
+  
+   
+   
+    <tr>
+      <th> Contact Number</th> 
+         <% profiles.forEach(function(profile){ %>
+  
+      <td><%= profile.contact %></td>
+           <%}) %>
+
+    </tr>
+   
+    
+    <tr>
+      <th> Facebook Link</th>      
+      <td>       
+      <% profiles.forEach(function(profile){ %>
+       <a href='<%= profile.fb %>' style="background-color: RED">Ankita Sharma</a>
+      <%}) %>
+      </td>
+    </tr>
+    
+    
+    </table>
+         <!--  <% profiles.forEach(function(profile){ %>
+
+    <img src="https://pre00.deviantart.net/5a89/th/pre/i/2012/006/1/a/gcat_by_crowbawt-d4livn6.jpg" style="height: <%= profile.semester %>px">
+
+      <%}) %> -->
+
+    <a href="/">Go to edit </a>
+    <ul>
+    
+</ul>
+</p>   
+
+</script></html>
